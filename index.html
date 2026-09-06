@@ -3,31 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tech Text</title>
+  <title>Tech Tools</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      height: 100vh;
+      min-height: 100vh;
       background: #ffffff;
-      color: #000000;
+      color: #0a0a0a;
       display: flex;
       justify-content: center;
       align-items: center;
       font-family: "Inter", "Segoe UI", Arial, sans-serif;
     }
 
-    .tech-text {
-      font-size: 42px;
-      font-weight: 700;
-      letter-spacing: 1.5px;
+    .hero {
+      width: 100%;
+      padding: 40px 24px;
       text-align: center;
+    }
+
+    .hero-title {
+      margin: 0;
+      font-size: clamp(36px, 6vw, 72px);
+      font-weight: 750;
+      line-height: 1.1;
+      letter-spacing: -1.5px;
       text-transform: uppercase;
+    }
+
+    .hero-description {
+      max-width: 760px;
+      margin: 24px auto 0;
+      font-size: clamp(16px, 2vw, 20px);
+      font-weight: 400;
+      line-height: 1.7;
+      letter-spacing: 0.2px;
+      color: #666666;
+    }
+
+    .accent {
+      display: inline-block;
+      width: 48px;
+      height: 3px;
+      margin-top: 32px;
+      background: #0a0a0a;
+      border-radius: 999px;
     }
   </style>
 </head>
+
 <body>
-  <div class="tech-text">
-    A company that specializes in developing tools
-  </div>
+  <main class="hero">
+    <h1 class="hero-title">
+      We Build Tools That Move Work Forward
+    </h1>
+
+    <p class="hero-description">
+      Powerful, reliable software engineered to simplify complexity
+      and accelerate productivity.
+    </p>
+
+    <span class="accent"></span>
+  </main>
 </body>
 </html>
